@@ -1,8 +1,9 @@
-<?php /* TODO: Will need an image later so keeping this as reference ?>
-  <div id="capybara-wrapper">
-    <?php echo theme_image(array('path' => $directory . '/transparent-capybara.png', 'alt' => 'A nice capybara drawing', 'title' => 'A nice capybara drawing, isn\'t it?', 'attributes' => array('id' => 'capybara'))); ?>
-  </div>
-<?php */ ?>
+  <?php if ($is_front): ?>
+    <div id="scenery">
+      <p class="credit">This photo was taken by Fir0002/Flagstaffotos and is licenesed under CC BY-NC. Thanks!</p>
+    </div>
+  <?php endif; ?>
+
     <div id="wrapper" <?php if ($is_front): ?>class="front"<?php endif; ?>">
 
     <div>
@@ -59,7 +60,7 @@
       <?php endif; ?>
 
       <section class="main">
-        <div class="<?php if ($is_front): ?>class-100<?php else: ?>grid-70<?php endif; ?>">
+        <div id="content" class="<?php if ($is_front): ?>class-100<?php else: ?>grid-70<?php endif; ?>">
           <?php echo render($page['highlighted']); ?>
           <?php echo render($title_prefix); ?>
           <?php if ($title): ?><h1><?php echo $title; ?></h1><?php endif; ?>
@@ -72,7 +73,7 @@
           <div class="feed-icons"><?php echo $feed_icons; ?></div>
         </div>
 
-        <div class="grid-30">
+        <div id="sidebar" class="grid-30">
           <?php echo render($page['sidebar']); ?>
         </div>
 
