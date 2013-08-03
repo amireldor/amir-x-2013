@@ -4,6 +4,7 @@ description = Amir-X theme created in 2013
 version = aloov
 core = 7.x
 
+regions[topbar] = Top bar
 regions[header] = Header
 regions[content] = Content
 regions[sidebar] = Sidebar

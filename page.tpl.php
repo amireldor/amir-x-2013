@@ -1,20 +1,14 @@
+<?php /* TODO: Will need an image later so keeping this as reference ?>
   <div id="capybara-wrapper">
     <?php echo theme_image(array('path' => $directory . '/transparent-capybara.png', 'alt' => 'A nice capybara drawing', 'title' => 'A nice capybara drawing, isn\'t it?', 'attributes' => array('id' => 'capybara'))); ?>
   </div>
+<?php */ ?>
+    <div id="wrapper" <?php if ($is_front): ?>class="front"<?php endif; ?>">
 
-  <div id="wrapper" class="grid-container">
+    <div>
+      <header id="header-wrapper">
+        <div id="menus">
 
-    <div class="grid-100">
-      <header>
-        <div class="grid-60">
-          <?php if ($page['header']): ?>
-            <?php echo render($page['header']); ?>
-          <?php else: ?>
-            <h1><a href="<?php echo $front_page; ?>"><?php echo $site_name ?></a></h1>
-          <?php endif;?>
-        </div>
-
-        <div id="menus" class="grid-40">
           <nav id="main_menu">
             <ul>
             <?php foreach ($main_menu as $item): ?>
@@ -30,12 +24,21 @@
             <?php endforeach; ?>
             </ul>
           </nav>
+
+          <div id="topbar">
+            <?php echo render($page['topbar']); ?>
+          </div>
+
         </div> <!-- menus -->
 
       </header>
     </div>
 
-    <div id="middle-content" class="grid-100">
+    <div id="middle-content" class="grid-container<?php if ($is_front): ?> front<?php endif; ?>">
+
+        <div id="header" class="grid-container">
+          <?php echo render($page['header']); ?>
+        </div>
 
       <?php if ($messages): ?>
         <div id="messages">
@@ -56,7 +59,7 @@
       <?php endif; ?>
 
       <section class="main">
-        <div class="grid-70">
+        <div class="<?php if ($is_front): ?>class-100<?php else: ?>grid-70<?php endif; ?>">
           <?php echo render($page['highlighted']); ?>
           <?php echo render($title_prefix); ?>
           <?php if ($title): ?><h1><?php echo $title; ?></h1><?php endif; ?>
@@ -76,7 +79,7 @@
       </section> <!-- main -->
     </div>
 
-    <footer class="grid-100">
+    <footer>
       <?php echo render($page['footer']); ?>
     </footer>
 
