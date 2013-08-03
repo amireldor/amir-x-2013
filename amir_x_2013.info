@@ -1,0 +1,22 @@
+name = Amir-X 2013
+description = Amir-X theme created in 2013
+
+version = aloov
+core = 7.x
+
+regions[header] = Header
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/unsemantic-grid-responsive-tablet.css
+stylesheets[all][] = style.css
+
+; stylesheets for lt IE 9 are added on template.php
+
+; Might use JavaScript
+; scripts[] = require.js
+; scripts[] = main.js
+
+; HTML5Shiv scripts are in template.php
