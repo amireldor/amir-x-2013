@@ -45,6 +45,10 @@ a {
 	padding: 2em 0;
 	margin: 0;
 	background: rgba(232, 158, 55, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 #menus {
@@ -75,6 +79,10 @@ a {
 	right: 1em;
 }
 
+#middle-content.front {
+	margin-top: 142px;
+}
+
 #middle-content.front #content {
 	color: #e89e37;
 	text-align: center;
@@ -84,10 +92,12 @@ a {
 	font-size: 110pt;
 	font-family: Molot;
 	font-weight: normal;
+	margin: 0.2em 0 14px;
 }
 
 #middle-content.front p {
 	font-size: 30pt;
 	font-family: RowdyHeavy;
 	line-height: 1.2em;
+	margin: 0;
 }
