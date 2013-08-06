@@ -10,7 +10,7 @@
       <header id="header-wrapper">
         <div id="menus">
 
-          <nav id="main_menu">
+          <nav id="main-menu">
             <ul>
             <?php foreach ($main_menu as $item): ?>
               <li><?php echo l($item['title'], $item['href']); ?></li>
@@ -18,19 +18,22 @@
             </ul>
           </nav>
 
-          <nav id="secondary_menu">
+          <?php if ($secondary_menu): ?>
+          <nav id="secondary-menu">
             <ul>
             <?php foreach ($secondary_menu as $item): ?>
               <li><?php echo l($item['title'], $item['href']); ?></li>
             <?php endforeach; ?>
             </ul>
           </nav>
-
-          <div id="topbar">
-            <?php echo render($page['topbar']); ?>
-          </div>
+          <?php endif; ?>
 
         </div> <!-- menus -->
+
+        <div id="topbar">
+          <?php echo render($page['topbar']); ?>
+        </div>
+
 
       </header>
     </div>
