@@ -55,6 +55,7 @@ a {
 #menus {
 	text-align: center;
 	margin: 0;
+	line-height: 16px;
 }
 
 #menus ul {
@@ -76,10 +77,11 @@ a {
 
 #search-block-form {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 7.5px;
+	right: 4px;
 	float: right;
 	z-index: 5;
+	height: 14px;
 }
 
 #topbar * {
@@ -95,10 +97,10 @@ a {
 }
 
 #topbar {
-	padding: 4px;
 	color: black;
 	font-size: 12pt;
-	margin: 8px 0;
+	margin: 0;
+	padding: 0;
 }
 
 #middle-content.front {
