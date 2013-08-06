@@ -93,19 +93,20 @@ a {
 }
 
 #middle-content.front {
-	margin-top: 142px;
+	margin-top: 42px;
 }
 
 #middle-content.front #content {
-	color: #e89e37;
 	text-align: center;
+	text-shadow: black 0 0 5px;
+	color: #fecd00;
 }
 
 #middle-content.front h1 {
-	font-size: 110pt;
+	font-size: 90pt;
 	font-family: Molot;
 	font-weight: normal;
-	margin: 0.2em 0 14px;
+	margin: 0.2em 0 34px;
 }
 
 #middle-content.front p {
