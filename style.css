@@ -1,10 +1,10 @@
 @font-face {
-	font-family: "RowdyHeavy";
+	font-family: Text;
 	src: url('fonts/RowdyHeavy.ttf');
 }
 
 @font-face {
-	font-family: "Molot";
+	font-family: Logo;
 	src: url('fonts/Molot.otf');
 }
 
@@ -56,6 +56,11 @@ a {
 	text-align: center;
 	margin: 0;
 	line-height: 16px;
+	font-family: Text, Georgia;
+}
+
+#menus a {
+	text-decoration: none;
 }
 
 #menus ul {
@@ -104,14 +109,14 @@ a {
 
 #middle-content.front h1 {
 	font-size: 90pt;
-	font-family: Molot;
+	font-family: Logo, "Arial Black";
 	font-weight: normal;
 	margin: 0.2em 0 34px;
 }
 
 #middle-content.front p {
 	font-size: 30pt;
-	font-family: RowdyHeavy;
+	font-family: Text, Georgia;
 	line-height: 1.2em;
 	margin: 0;
 }
