@@ -72,28 +72,17 @@ a {
 
 #main-menu {
 	z-index: 12;
-	position: relative;
 }
 
 #search-block-form {
-	position: absolute;
-	top: 7.5px;
-	right: 4px;
-	float: right;
 	z-index: 5;
-	height: 14px;
-}
-
-#topbar * {
-	display: inline;
+	text-align: right;
 }
 
 #topbar .block {
-	float: right;
-	text-align: right;
-	padding-right: 1em;
-	width: 352px;
+	text-align: center;
 	display: inline;
+	width: 312px;
 }
 
 #topbar {

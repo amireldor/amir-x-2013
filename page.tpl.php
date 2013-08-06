@@ -8,33 +8,33 @@
 
     <div>
       <header id="header-wrapper">
-        <div id="menus">
+        <div class="grid-container" style="max-width: 100%;">
+          <div id="menus" class="grid-80 push-10">
 
-          <nav id="main-menu">
-            <ul>
-            <?php foreach ($main_menu as $item): ?>
-              <li><?php echo l($item['title'], $item['href']); ?></li>
-            <?php endforeach; ?>
-            </ul>
-          </nav>
+            <nav id="main-menu">
+              <ul>
+              <?php foreach ($main_menu as $item): ?>
+                <li><?php echo l($item['title'], $item['href']); ?></li>
+              <?php endforeach; ?>
+              </ul>
+            </nav>
 
-          <?php if ($secondary_menu): ?>
-          <nav id="secondary-menu">
-            <ul>
-            <?php foreach ($secondary_menu as $item): ?>
-              <li><?php echo l($item['title'], $item['href']); ?></li>
-            <?php endforeach; ?>
-            </ul>
-          </nav>
-          <?php endif; ?>
+            <?php if ($secondary_menu): ?>
+            <nav id="secondary-menu">
+              <ul>
+              <?php foreach ($secondary_menu as $item): ?>
+                <li><?php echo l($item['title'], $item['href']); ?></li>
+              <?php endforeach; ?>
+              </ul>
+            </nav>
+            <?php endif; ?>
 
-        </div> <!-- menus -->
+          </div> <!-- menus -->
 
-        <div id="topbar">
-          <?php echo render($page['topbar']); ?>
+          <div id="topbar" class="grid-20">
+            <?php echo render($page['topbar']); ?>
+          </div>
         </div>
-
-
       </header>
     </div>
 
