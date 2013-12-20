@@ -8,7 +8,7 @@
   <?php echo $styles; ?>
   <?php echo $scripts; ?>
 </head>
-<body>
+<body<?php if ($is_front): ?> class="front"<?php endif; ?>>
   <?php echo $page_top; ?>
   <?php echo $page; ?>
   <?php echo $page_bottom; ?>

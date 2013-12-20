@@ -11,15 +11,33 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #4c81d5;
+	background: #3c66a8;
 	color: white;
 	font-size: 14pt;
 	font-weight: normal;
 	overflow-x: hidden;
 }
 
+body.front {
+	background: #4c81d5;
+}
+
 a {
 	color: black;
+}
+
+#content a, #sidebar a {
+	color: white;
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: square;
+}
+
+article header.details time {
+	font-style: italic;
+	font-size: small;
 }
 
 #scenery {
@@ -45,11 +63,15 @@ a {
 #header-wrapper {
 	padding: .4em 0;
 	margin: 0;
-	background: rgba(232, 158, 55, 0.7);
+	background: #ba9566;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+}
+
+div#wrapper.front #header-wrapper{
+	background: rgba(232, 158, 55, 0.7);
 }
 
 #menus {
@@ -97,6 +119,10 @@ a {
 	padding: 0;
 }
 
+#middle-content {
+	margin-top: 50px;
+}
+
 #middle-content.front {
 	margin-top: 42px;
 }
@@ -119,4 +145,10 @@ a {
 	font-family: Text, Georgia;
 	line-height: 1.2em;
 	margin: 0;
+}
+
+#sidebar div.region-sidebar {
+	background: #ba9566;
+	padding: 20px 10px 44px;
+	border-radius: 15px;
 }

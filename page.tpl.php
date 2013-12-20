@@ -4,7 +4,7 @@
     </div>
   <?php endif; ?>
 
-    <div id="wrapper" <?php if ($is_front): ?>class="front"<?php endif; ?>">
+    <div id="wrapper"<?php if ($is_front): ?> class="front"<?php endif; ?>>
 
     <div>
       <header id="header-wrapper">
