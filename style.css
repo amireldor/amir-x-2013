@@ -10,7 +10,7 @@
 
 body {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 10em;
 	background: #3c66a8;
 	color: white;
 	font-size: 14pt;
@@ -26,6 +26,10 @@ a {
 	color: black;
 }
 
+#content h1, #content h1 a {
+	color: #fecd00;
+}
+
 #content a, #sidebar a {
 	color: white;
 	text-decoration: underline;
@@ -37,7 +41,8 @@ ul {
 
 article header.details time {
 	font-style: italic;
-	font-size: small;
+	font-size: smaller;
+	color: #ccc;
 }
 
 #scenery {
@@ -64,9 +69,6 @@ article header.details time {
 	padding: .4em 0;
 	margin: 0;
 	background: #ba9566;
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 }
 
@@ -120,7 +122,7 @@ div#wrapper.front #header-wrapper{
 }
 
 #middle-content {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 #middle-content.front {
